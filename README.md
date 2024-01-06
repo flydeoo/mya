@@ -10,3 +10,6 @@ a fun project to create a tiny OS from scratch
 
 - [episode 1: my understanding of CPU and Memory interaction](https://github.com/flydeoo/mya/blob/main/docs/episode%201%3A%20my%20understanding%20of%20CPU%20and%20Memory%20interaction.md)
 
+
+- [episode 2: write our very first tiny bootloader](https://github.com/flydeoo/mya/blob/main/docs/episode%202%3A%20write%20our%20very%20first%20tiny%20bootloader.md) 
+
