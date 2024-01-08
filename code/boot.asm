@@ -26,5 +26,5 @@ mov ax, 0
 
 msg: db "Hello, world!"
 
-times 510-($-$$)
-db 0 dw 0xAA55
+times 510-($-$$) db 0 
+dw 0xAA55
