@@ -446,15 +446,15 @@ jmp print_loop
 exit: 
 mov ax, 0
 
-times 510-($-$$)
-db 0 dw 0xAA55
+times 510-($-$$) db 0 
+dw 0xAA55
 ```
 
 following code:
 
 ``` assembly
-times 510-($-$$)
-db 0 dw 0xAA55
+times 510-($-$$) db 0
+dw 0xAA55
 ```
 
 adds a two-byte signature (which is 0xAA 0x55) at byte numbers 511 and 512, so bios can recognize our bootloader.
@@ -587,8 +587,8 @@ mov ax, 0
 
 msg: db "Hello, world!"
 
-times 510-($-$$)
-db 0 dw 0xAA55
+times 510-($-$$) db 0
+dw 0xAA55
 ```
 
 It's time to determine whether it's working or not:
