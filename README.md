@@ -13,3 +13,4 @@ a fun project to create a tiny OS from scratch
 
 - [episode 2: write our very first tiny bootloader](https://github.com/flydeoo/mya/blob/main/docs/episode%202%3A%20write%20our%20very%20first%20tiny%20bootloader.md) 
 
+- [episode3: Tracing Stack and Function Calls with GDB](https://github.com/flydeoo/mya/blob/main/docs/episode3%3A%20Tracing%20Stack%20and%20Function%20Calls%20with%20GDB.md)
