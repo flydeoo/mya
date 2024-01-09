@@ -601,5 +601,8 @@ I think it's time to wrap up this article.
 
 For access to the codes of this project and more, please check out the following GitHub repository: https://github.com/flydeoo/mya
 
+Also, check out the episode 2 release at: https://github.com/flydeoo/mya/releases/tag/v0.02
+
+
 Thank you for reading and see you in the next episode.
 
