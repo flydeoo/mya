@@ -23,7 +23,7 @@ For each episode that includes code, there is a corresponding [release](https://
 
 - [episode 4: CPU interaction with memory and IO](https://github.com/flydeoo/mya/blob/main/docs/episode%204%3A%20CPU%20interaction%20with%20memory%20and%20IO.md)
 
-- episode 5: switch to protected mode (in progress)
+- [episode 5: switch to protected mode](https://github.com/flydeoo/mya/blob/main/docs/episode%205%3A%20switch%20to%20protected%20mode.md)
 
 - episode 6: migrate preparation (TBD)
 
