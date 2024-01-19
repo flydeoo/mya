@@ -1,7 +1,6 @@
 bits 16
 
-mov ax, 0x7c0
-mov ds, ax
+org 0x7c00
 
 mov ax, 0x840
 mov ss, ax
@@ -10,14 +9,13 @@ mov ax, 0x2000
 mov sp, ax
 mov bp, ax
 
-push ax
-push ax
-pop bx
 
 
 call clear_screen
 call print_text
-call finish
+call load_hda
+jmp 0xa411
+
 
 print_text:
 
@@ -56,8 +54,22 @@ ret
 exit: 
 mov ax, 0
 
-finish:
-hlt
+load_hda:
+
+
+mov ah, 2 
+mov al, 1	    ; count of sectors
+mov ch, 0 	    ; start of cylinder (C)
+mov cl, 1 	    ; start of sector   (S) (starts from 1)
+mov dh, 0 	    ; head	        (H)
+mov dl, 0x80 	    ; read from hda
+mov bx, 0xA411 	    ; buffer
+int 0x13
+
+ret
+
+
+
 
 msg: db "Hello, world!"
 

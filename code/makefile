@@ -1,12 +1,16 @@
 boot.bin: boot.asm
 	  nasm -f bin -o boot.bin boot.asm
 
+second_stage.bin: second_stage.asm
+		  nasm -f bin -o second_stage.bin second_stage.asm
+
+all: boot.bin second_stage.bin 
 
 .PHONY: run debug
 
 run:
-	$(MAKE) && qemu-system-i386 -fda boot.bin -s -S
+	$(MAKE) all && qemu-system-i386 -fda boot.bin -hda second_stage.bin -s -S
 
 debug:
 	#qemu-system-i386 -s -S -fda boot.bin
-	gdb -ex "target remote :1234" -ex "b *0x7c00" -ex "set tdesc filename gdb_asset/target.xml" -ex "layout asm"
+	gdb -ex "target remote :1234" -ex "b *0x7c00" -ex "b *0xa411" -ex "set tdesc filename gdb_asset/target.xml" -ex "layout asm"
