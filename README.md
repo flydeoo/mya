@@ -25,7 +25,7 @@ For each episode that includes code, there is a corresponding [release](https://
 
 - [episode 5: switch to protected mode](https://github.com/flydeoo/mya/blob/main/docs/episode%205%3A%20switch%20to%20protected%20mode.md)
 
-- episode 6: migrate preparation (TBD)
+- [episode 6: migrate preparation](https://github.com/flydeoo/mya/blob/main/docs/episode%206%3A%20migrate%20preparation.md)
 
 - episode 7: migrate to c (TBD)
 
