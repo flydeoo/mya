@@ -66,6 +66,16 @@ mov dl, 0x80 	    ; read from hda
 mov bx, 0xA411 	    ; buffer
 int 0x13
 
+mov ah, 2
+mov al, 1	    ; count of sectors
+mov ch, 0	    ; start of cylinder (C)
+mov cl, 1	    ; start of sector   (S) (starts from 1)
+mov dh, 0	    ; head          	(H)
+mov dl, 0x81	    ; read from hdb
+mov bx, 0xC350	    ; buffer
+int 0x13
+
+
 ret
 
 
