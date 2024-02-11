@@ -27,7 +27,7 @@ For each episode that includes code, there is a corresponding [release](https://
 
 - [episode 6: migrate preparation](https://github.com/flydeoo/mya/blob/main/docs/episode%206%3A%20migrate%20preparation.md)
 
-- episode 7: migrate to c (TBD)
+- [episode 7: migrate to C](https://github.com/flydeoo/mya/blob/main/docs/episode%207%3A%20migrate%20to%20C.md)
 
 
 >  More episodes will be determined soon.
